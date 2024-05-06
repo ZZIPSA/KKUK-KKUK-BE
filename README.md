@@ -19,7 +19,7 @@ $ yarn start:dev
 ### Prisma Studio 실행
 
 ```bash
-$ npx prisma studio
+$ npx prisma studio --schema=src/prisma/schema.prisma
 ```
 
 ### DB 관련 실행

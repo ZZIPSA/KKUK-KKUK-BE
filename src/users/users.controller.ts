@@ -6,8 +6,8 @@ export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Post()
-  createUser(@Body('email') email: string, @Body('name') name: string) {
+  createUser(@Body('email') email: string) {
     console.log(email);
-    return this.usersService.createUser({ email, name });
+    return this.usersService.createUser({ email });
   }
 }
