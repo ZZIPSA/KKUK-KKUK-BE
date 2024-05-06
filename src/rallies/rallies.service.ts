@@ -5,6 +5,7 @@ import { UpdateRallyDto } from './dto/update-rally.dto';
 @Injectable()
 export class RalliesService {
   create(createRallyDto: CreateRallyDto) {
+    console.log(createRallyDto);
     return 'This action adds a new rally';
   }
 
@@ -17,6 +18,7 @@ export class RalliesService {
   }
 
   update(id: number, updateRallyDto: UpdateRallyDto) {
+    console.log(updateRallyDto);
     return `This action updates a #${id} rally`;
   }
 

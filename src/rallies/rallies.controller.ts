@@ -1,9 +1,17 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { RalliesService } from './rallies.service';
 import { CreateRallyDto } from './dto/create-rally.dto';
 import { UpdateRallyDto } from './dto/update-rally.dto';
 
-@Controller('rallies')
+@Controller('rally')
 export class RalliesController {
   constructor(private readonly ralliesService: RalliesService) {}
 

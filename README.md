@@ -5,18 +5,27 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+$ yarn start:dev
+```
 
-# watch mode
-$ npm run start:dev
+## Prisma
 
-# production mode
-$ npm run start:prod
+### Prisma Studio 실행
+
+```bash
+$ npx prisma studio --schema=src/prisma/schema.prisma
+```
+
+### DB 관련 실행
+
+```bash
+$ yarn prisma:generate
+$ yarn prisma:migrate
+$ yarn prisma:db-push
 ```
