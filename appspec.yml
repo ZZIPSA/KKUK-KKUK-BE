@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: output
+    destination: /home/ubuntu/kkuk-kkuk-be
+hooks:
+  AfterInstall:
+    - location: deploy.sh
+      runas: ubuntu
