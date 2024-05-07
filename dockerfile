@@ -11,8 +11,6 @@ RUN npm install
 # Copy app source code
 COPY . .
 
-ENV NODE_ENV dev
-
 # Prisma generate
 RUN npm install prisma
 RUN npx prisma generate

@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    DATABASE_URL: "postgresql://<username>:<password>@<rds-endpoint>:5432/<database-name>"
-
 phases:
   install:
     runtime-versions:
@@ -11,7 +7,7 @@ phases:
     commands:
       - echo Installing dependencies...
       - apt-get update -y
-      - apt-get install -y docker.io
+      - apt-get install -y docker
       - npm install -g @nestjs/cli
       - npm install
 
@@ -33,7 +29,6 @@ phases:
       - mkdir -p output
       - mv kkuk-kkuk-be.tar.gz output/
       - cp Dockerfile output/
-      - cp -R dist/ output/
 
 artifacts:
   files:
