@@ -1,7 +1,7 @@
 version: 0.0
-os: ubuntu
+os: linux
 files:
-  - source: output
+  - source: output/kkuk-kkuk-be.tar.gz
     destination: /home/ubuntu/kkuk-kkuk-be
 hooks:
   AfterInstall:
