@@ -3,7 +3,11 @@ os: linux
 files:
   - source: output/kkuk-kkuk-be.tar.gz
     destination: /home/ubuntu/kkuk-kkuk-be
+  - source: output/deploy.sh
+    destination: /home/ubuntu/kkuk-kkuk-be
+  - source: output/docker-compose.yml
+    destination: /home/ubuntu/kkuk-kkuk-be
 hooks:
   AfterInstall:
-    - location: deploy.sh
+    - location: /home/ubuntu/kkuk-kkuk-be/deploy.sh
       runas: ubuntu
