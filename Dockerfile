@@ -1,5 +1,5 @@
 # Dockerfile
-FROM node:20.4.0-alpin3.18  AS builder
+FROM node:20-alpine  AS builder
 
 # Create app directory
 WORKDIR /app
@@ -18,7 +18,7 @@ RUN npx prisma generate
 RUN npm run build
 
 # Runtime stage
-FROM node:20.4.0-alpin3.18
+FROM node:20-alpine
 
 WORKDIR /usr/src/app
 
