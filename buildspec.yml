@@ -28,7 +28,7 @@ phases:
       - echo Preparing artifacts for CodeDeploy...
       - mkdir -p output
       - mv kkuk-kkuk-be.tar.gz output/
-      - cp Dockerfile output/
+      - cp ./Dockerfile output/
 
 artifacts:
   files:
