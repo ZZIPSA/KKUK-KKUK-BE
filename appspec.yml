@@ -3,10 +3,13 @@ os: linux
 files:
   - source: output/kkuk-kkuk-be.tar.gz
     destination: /home/ubuntu/kkuk-kkuk-be
+    overwirte: true
   - source: output/deploy.sh
     destination: /home/ubuntu/kkuk-kkuk-be
+    overwirte: true
   - source: output/docker-compose.yml
     destination: /home/ubuntu/kkuk-kkuk-be
+    overwirte: true
 hooks:
   AfterInstall:
     - location: /home/ubuntu/kkuk-kkuk-be/deploy.sh
