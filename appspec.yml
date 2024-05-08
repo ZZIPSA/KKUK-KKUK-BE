@@ -13,5 +13,5 @@ files:
 
 hooks:
   AfterInstall:
-    - location: /home/ubuntu/kkuk-kkuk-be/deploy.sh
+    - location: ../../../../../../home/ubuntu/kkuk-kkuk-be/deploy.sh
       runas: ubuntu
