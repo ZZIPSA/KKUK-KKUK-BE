@@ -10,7 +10,9 @@ files:
   - source: docker-compose.yml
     destination: /home/ubuntu/kkuk-kkuk-be
     overwirte: true
-
+  - source: Dockerfile
+    destination: /home/ubuntu/kkuk-kkuk-be
+    overwirte: true
 hooks:
   AfterInstall:
     - location: ../../../../../../home/ubuntu/kkuk-kkuk-be/deploy.sh
