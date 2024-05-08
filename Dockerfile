@@ -2,7 +2,7 @@
 FROM node:20-alpine  AS builder
 
 # Create app directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package*.json ./
@@ -23,8 +23,8 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 # Copy only built files and node_modules from the build stage
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/dist ./dist
+COPY --from=builder /usr/src/app/node_modules ./node_modules
+COPY --from=builder /usr/src/app/dist ./dist
 
 USER node
 
