@@ -32,7 +32,11 @@ phases:
       - cp docker-compose.yml output/
       - cp deploy.sh output/
       - chmod +x output/deploy.sh
+      - chmod +x output/kkuk-kkuk-be.tar.gz
+      - chmod +x output/appspec.yml
       - cp ./Dockerfile output/
+      - chmod +x output/docker-compose.yml
+      - chmod +x output/Dockerfile
       - echo "Listing files in output directory:"
       - ls -al output
 
